@@ -32,7 +32,7 @@ namespace GestionInventario.Controlador
                 productDao.Delete(product.Id);
             }catch(Exception ex)
             {
-                throw new Exception("Error al borrar!");
+                throw new Exception("Error al borrar! " + ex.Message);
             }
             
         }
